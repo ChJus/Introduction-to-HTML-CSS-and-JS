@@ -37,3 +37,8 @@ If you are stuck, you may want to take a look at the reference solution in the *
 
 - Customize the component to match your visual aesthetic tastes. You may also want to explore creating a dark mode
   version.
+
+## Extra practice
+
+- [Blog preview card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
+- [Signup form](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)

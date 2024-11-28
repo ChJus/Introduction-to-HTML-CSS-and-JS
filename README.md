@@ -3,9 +3,11 @@
 Guided projects included in this repository:
 
 1. [Basic card component](card-component.md) — Introduction to HTML and CSS
-2. Age calculator app — Introduction to JavaScript
-3. Generative art — Perlin Noise flow field
-4. Working with Canvas and SVG — for video game development, art, and visualization
+2. [Age calculator app](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q) — Introduction to
+   JavaScript
+3. [Quiz app](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU)
+4. Generative art — Perlin Noise flow field
+5. Working with Canvas and SVG — for video game development, art, and visualization
 
 ## Instructions
 
