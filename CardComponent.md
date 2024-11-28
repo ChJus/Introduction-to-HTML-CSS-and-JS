@@ -32,4 +32,5 @@ If you are stuck, you may want to take a look at the reference solution in the *
 - Add interactive effects, e.g., altering the color of the button on mouse hover.
   You may want to take a look a [CSS transition effects](https://www.w3schools.com/css/css3_transitions.asp).
 
-- Don't use the HTML code provided — see if you can come up with a similar solution from scratch.   
+- Don't use the HTML code provided — see if you can come up with a similar solution from scratch.
+  The general structure is outlined below: ![](assets/card-component-structure.png)
