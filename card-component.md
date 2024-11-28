@@ -34,3 +34,6 @@ If you are stuck, you may want to take a look at the reference solution in the *
 
 - Don't use the HTML code provided — see if you can come up with a similar solution from scratch.
   The general structure is outlined below: ![](assets/card-component-structure.png)
+
+- Customize the component to match your visual aesthetic tastes. You may also want to explore creating a dark mode
+  version.

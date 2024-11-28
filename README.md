@@ -2,7 +2,7 @@
 
 Guided projects included in this repository:
 
-1. [Basic card component](CardComponent.md) — Introduction to HTML and CSS
+1. [Basic card component](card-component) — Introduction to HTML and CSS
 2. Age calculator app — Introduction to JavaScript
 3. Generative art — Perlin Noise flow field
 4. Working with Canvas and SVG — for video game development, art, and visualization
