@@ -3,7 +3,7 @@
 ## Getting started
 
 Your goal is to recreate the following screen using HTML and CSS.
-![](assets/card-component-reference.png)
+![](../assets/card-component-reference.png)
 
 Some basic details:
 
@@ -27,13 +27,13 @@ If you are stuck, you may want to take a look at the reference solution in the *
   See if you can support mobile or smaller screens, e.g., as shown in the view below.
   You may want to take a look at [CSS media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
 
-![](assets/responsive-web-dev-card-component.png)
+![](../assets/responsive-web-dev-card-component.png)
 
 - Add interactive effects, e.g., altering the color of the button on mouse hover.
   You may want to take a look a [CSS transition effects](https://www.w3schools.com/css/css3_transitions.asp).
 
 - Don't use the HTML code provided — see if you can come up with a similar solution from scratch.
-  The general structure is outlined below: ![](assets/card-component-structure.png)
+  The general structure is outlined below: ![](../assets/card-component-structure.png)
 
 - Customize the component to match your visual aesthetic tastes. You may also want to explore creating a dark mode
   version.

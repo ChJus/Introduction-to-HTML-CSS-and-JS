@@ -2,15 +2,20 @@
 
 Guided projects included in this repository:
 
-1. [Basic card component](card-component.md) — Introduction to HTML and CSS
-2. [Age calculator app](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q) — Introduction to
-   JavaScript
-3. [Quiz app](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU)
-4. Generative art — Perlin Noise flow field
-5. Working with Canvas and SVG — for video game development, art, and visualization
+1. [Basic card component](guides/card-component.md) — Introduction to HTML and CSS
+2. [Age calculator app](guides/age-calculator-app.md) — Beginning JavaScript
+3. [Quiz app](guides/quiz-app.md) — Further JavaScript
+
+Extra 1: [Simple website](guides/simple-website.md) — Deeper dive into HTML and CSS
+
+Extra 2: [Generative art](https://thecodingtrain.com/challenges/24-perlin-noise-flow-field) — Perlin noise flow field
+
+Extra 3: [Working with Canvas and SVG]() — for video game development, art, and visualization
 
 ## Instructions
 
 - **Fork** this repository and go to WebStorm. Click **Get from VCS** and connect your GitHub account to your IDE.
 - Start working on your project! You can periodically commit and push your changes to your repository to make it public
   on GitHub.
+
+## [Final Project](guides/final-project.md)
