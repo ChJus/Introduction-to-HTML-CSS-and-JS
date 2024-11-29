@@ -8,7 +8,7 @@ Guided projects included in this repository:
 
 Extra 1: [Simple website](guides/simple-website.md) — Deeper dive into HTML and CSS
 
-Extra 2: [Generative art](https://thecodingtrain.com/challenges/24-perlin-noise-flow-field) — Perlin noise flow field
+Extra 2: [Generative art](guides/generative-art.md)
 
 Extra 3: [Working with Canvas and SVG]() — for video game development, art, and visualization
 
