@@ -15,3 +15,12 @@ Consider:
 - Responsive design — consideration for mobile viewports.
 - Typography and color palette
 - **Challenge**: add a simple animation when the age updates (e.g., implement a number counter/ticker animation).
+
+Styling:
+
+-
+
+Useful references:
+
+- [Date](https://www.w3schools.com/js/js_dates.asp), [Event listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp),
+  [Timing](https://www.w3schools.com/js/js_timing.asp)

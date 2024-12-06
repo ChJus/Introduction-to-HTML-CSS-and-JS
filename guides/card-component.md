@@ -42,3 +42,4 @@ If you are stuck, you may want to take a look at the reference solution in the *
 
 - [Blog preview card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
 - [Signup form](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
+- [Social links profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
