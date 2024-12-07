@@ -42,8 +42,7 @@ To initialize a Date object, follow the format:
 
 ```js
 // Creates a date object representing current time
-Date
-d = new Date();
+let d = new Date();
 
 // Sets date to YYYY-MM-DD.
 // Note that month values are from 0-11, so remember to subtract 1.
