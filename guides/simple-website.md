@@ -29,6 +29,6 @@ Suggested tasks:
 
 - If you need creative inspiration/ideas, consider scrolling
   through [FrontendMentor challenges](https://www.frontendmentor.io/challenges).
-- I suggest looking at: [News homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl),
+- I suggest looking at: [news homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl),
   [landing page](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE),
   [design portfolio](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo).

@@ -51,8 +51,8 @@ let d = new Date();
 d.setFullYear(year, month, date);
 ```
 
-You may want to use the following function (
-from [StackOverflow](https://stackoverflow.com/questions/6950248/javascript-method-to-ensure-that-a-date-is-valid)) to
+You may want to use the following function
+(from [StackOverflow](https://stackoverflow.com/questions/6950248/javascript-method-to-ensure-that-a-date-is-valid)) to
 check whether a Date is valid based on the year, month, and day values.
 
 ```js
