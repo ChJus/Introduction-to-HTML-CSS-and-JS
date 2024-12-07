@@ -1,4 +1,12 @@
-# Guided Projects
+# Introduction to HTML, CSS, and JS
+
+Description: Learn and explore the basics of web development with HTML, CSS, and JS in this student-led activity!
+Students will explore web design and development, and finish the activity by creating and
+finishing their own personal project.
+
+## [Session slides](guides/Session%20Slides.pdf)
+
+## Guided Projects
 
 Guided projects included in this repository:
 
@@ -19,3 +27,5 @@ Extra 3: [Working with Canvas and SVG]() — for video game development, art, an
   on GitHub.
 
 ## [Final Project](guides/final-project.md)
+
+## [Further Learning Resources](guides/learning-resources.md)
