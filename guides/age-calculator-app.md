@@ -32,3 +32,37 @@ Useful references:
 
 - [Date](https://www.w3schools.com/js/js_dates.asp), [Event listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp),
   [Timing](https://www.w3schools.com/js/js_timing.asp)
+
+### Dealing with Dates
+
+JS has a built-in Date class. You can perform operations like `+` and `-` between Date objects to get the time
+difference in milliseconds.
+
+To initialize a Date object, follow the format:
+
+```js
+// Creates a date object representing current time
+Date
+d = new Date();
+
+// Sets date to YYYY-MM-DD.
+// Note that month values are from 0-11, so remember to subtract 1.
+// Date objects also have a year quirk where if values are between 0-99, 
+// they are assumed to refer to years in the 20th century.
+d.setFullYear(year, month, date);
+```
+
+You may want to use the following function (
+from [StackOverflow](https://stackoverflow.com/questions/6950248/javascript-method-to-ensure-that-a-date-is-valid)) to
+check whether a Date is valid based on the year, month, and day values.
+
+```js
+function isValidDate(year, month, day) {
+  let d = new Date(parseInt(year, 10),
+    parseInt(month, 10) - 1,
+    parseInt(day, 10));
+  return d.getFullYear() === year &&
+    (d.getMonth() + 1) === month &&
+    d.getDate() === day;
+}
+```
