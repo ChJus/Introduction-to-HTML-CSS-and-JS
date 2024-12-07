@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Calculator App</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: hsl(0, 0%, 94%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .container {
+      background-color: hsl(0, 0%, 100%);
+      display: block;
+      padding: 30px;
+      width: 70%;
+      border-radius: 10px 10px 100px 10px;
+
+      .container-input {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .input-block {
+          width: 30%;
+
+          label {
+            display: block;
+            padding: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: hsl(0, 1%, 44%);
+            font-size: 12px;
+            font-weight: 700;
+          }
+
+          input {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 10px;
+            width: clamp(100px, 70%, 200px);
+            outline: 0;
+            border: 1px solid hsl(0, 0%, 86%);
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .container-display {
+        p {
+          margin-block-start: 0;
+          margin-block-end: 0;
+          font-size: 32px;
+          font-weight: 800;
+          font-style: italic;
+
+          .purple {
+            color: hsl(259, 100%, 65%);
+            margin-right: 10px;
+          }
+
+          .black {
+            color: hsl(0, 0%, 8%);
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="container-input">
+    <div class="input-block">
+      <label for="day">Day</label>
+      <input type="number" id="day" name="day" placeholder="DD">
+    </div>
+
+    <div class="input-block">
+      <label for="month">Month</label>
+      <input type="number" id="month" name="month" placeholder="MM">
+    </div>
+
+    <div class="input-block">
+      <label for="year">Year</label>
+      <input type="number" id="year" name="year" placeholder="YYYY">
+    </div>
+  </div>
+  <div class="container-separator">
+    <hr/>
+    <button>
+      <object type="image/svg+xml" data="../assets/" class="download-icon"></object>
+    </button>
+  </div>
+  <div class="container-display">
+    <p><span class="purple">--</span><span class="black">years</span></p>
+    <p><span class="purple">--</span><span class="black">months</span></p>
+    <p><span class="purple">--</span><span class="black">days</span></p>
+  </div>
+</div>
+</body>
+</html>

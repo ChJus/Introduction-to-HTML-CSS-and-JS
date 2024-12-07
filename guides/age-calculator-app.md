@@ -18,7 +18,15 @@ Consider:
 
 Styling:
 
--
+- Font: Poppins (400-italic, 700, 800-italic);
+- Body copy: font size (32px)
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+- White: hsl(0, 0%, 100%)
+- Darker white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Lighter black: hsl(0, 0%, 8%)
 
 Useful references:
 
