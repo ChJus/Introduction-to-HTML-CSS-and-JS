@@ -18,7 +18,7 @@ Extra 1: [Simple website](guides/simple-website.md) — Deeper dive into HTML an
 
 Extra 2: [Generative art](guides/generative-art.md)
 
-Extra 3: [Working with Canvas and SVG]() — for video game development, art, and visualization
+Extra 3: [Working with Canvas and SVG](guides/canvas-and-svg.md) — for video game development, art, and visualization
 
 ## Instructions
 

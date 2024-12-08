@@ -14,6 +14,7 @@
 - [Computing | Khan Academy](https://www.khanacademy.org/computing)
     - Recommended: Cryptography, Information Theory courses
 - [The Art of Code](http://youtu.be/6avJHaC3C2U) talk
+- [Code](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) – Charles Petzold
 
 ## Applications of Web Development
 
