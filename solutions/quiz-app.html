@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+    :root {
+      --dark-blue: rgb(52, 62, 79);
+      --lighter-blue: rgb(63, 76, 101);
+      --foreground-white: rgb(248, 248, 248);
+      --grey: rgb(200, 200, 200);
+      --accent: #81a1c1;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: var(--dark-blue);
+      color: var(--foreground-white);
+    }
+
+    .card-display {
+      padding: 20px 40px;
+      display: flex;
+      gap: 30px;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: 500px) {
+        flex-direction: row;
+        .question-display {
+          width: 50%;
+        }
+
+        .answer-display {
+          width: 50%;
+        }
+      }
+
+      .question-display {
+        h1 {
+          color: var(--foreground-white);
+        }
+
+        p {
+          color: var(--grey);
+        }
+      }
+
+      .answer-display {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .answer-options-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .answer-option {
+            padding: 15px 20px;
+            background-color: var(--lighter-blue);
+            font-size: 15pt;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            line-height: 1.5;
+            transition: border 300ms;
+            border: 2px solid var(--lighter-blue);
+
+            .answer-option-name {
+              width: 30px;
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              border-radius: 5px;
+              color: var(--lighter-blue);
+              background-color: #d8dee9;
+            }
+
+            .answer-option-content {
+              display: inline-block;
+            }
+          }
+
+          .answer-option:hover {
+            border: 2px solid #81a1c1;
+            cursor: pointer;
+          }
+
+          .answer-option.active {
+            border: 2px solid var(--foreground-white);
+          }
+        }
+
+        .submit-option {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          border-radius: 10px;
+          display: block;
+          width: 100%;
+          padding: 10px 20px;
+          border: 0;
+          background-color: var(--accent);
+          color: var(--foreground-white);
+          transition: background-color 0.5s;
+        }
+
+        .submit-option:hover {
+          cursor: pointer;
+          background-color: #5e81ac;
+        }
+      }
+    }
+
+    .final-screen {
+      padding: 40px;
+      display: none;
+      gap: 15px;
+      flex-direction: column;
+
+      .final-display-text {
+        h2:nth-of-type(1) {
+          font-weight: 300;
+        }
+
+        h2:nth-of-type(2) {
+          font-weight: 700;
+        }
+      }
+
+      .final-display-score {
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        background-color: var(--lighter-blue);
+        border-radius: 10px;
+
+        .score {
+          font-weight: 800;
+          font-size: 30pt;
+          color: var(--foreground-white);
+        }
+
+        .total {
+          font-weight: 500;
+          font-size: 12pt;
+          color: var(--grey);
+        }
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/contrib/auto-render.min.js"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="card-display">
+  <div class="question-display">
+    <h2>Math Quiz</h2>
+    <p>Select an option to get started</p>
+    <h1></h1>
+  </div>
+  <div class="answer-display">
+    <template>
+      <div class="answer-option">
+        <div class="answer-option-name">
+          <span></span>
+        </div>
+        <div class="answer-option-content"></div>
+      </div>
+    </template>
+    <div class="answer-options-container">
+      <div class="answer-option">
+        <div class="answer-option-name"><span>A</span></div>
+        <div class="answer-option-content">Arithmetic</div>
+      </div>
+    </div>
+    <button class="submit-option">Submit</button>
+  </div>
+</div>
+<div class="final-screen">
+  <div class="final-display-text">
+    <h2>Quiz completed</h2>
+    <h2>You scored...</h2>
+  </div>
+  <div class="final-display-score">
+    <div class="score"></div>
+    <div class="total"></div>
+  </div>
+</div>
+
+</body>
+<script>
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let questions = [
+    {
+      question: "1 + 3 = ?",
+      correct_answer: "4",
+      options: ["4", "7", "1", "0"]
+    },
+    {
+      question: "3 - 2 = ?",
+      correct_answer: "1",
+      options: ["9", "1", "4", "7"]
+    },
+    {
+      question: "\\\(5 * 2 = ?\\\)",
+      correct_answer: "10",
+      options: ["17", "32", "10", "5"]
+    }
+  ];
+
+  let startQuiz = false;
+  let correctCount = 0;
+  let qNumber = 1;
+
+  setupListeners();
+
+  document.querySelector(".submit-option").addEventListener("click", () => {
+    if (document.querySelector(".answer-option.active")) {
+      if (!startQuiz) {
+        startQuiz = true;
+        showQuestion(qNumber);
+      } else {
+        // check answer, show next question
+        if (document.querySelector(".answer-option.active .answer-option-content").innerText === questions[qNumber - 1].correct_answer) {
+          correctCount++;
+        }
+        qNumber++;
+
+        if (qNumber <= questions.length) {
+          showQuestion(qNumber);
+        } else {
+          // Finished quiz
+          console.log(correctCount + " / " + questions.length + " correct.")
+          showFinishScreen(correctCount, questions.length);
+        }
+      }
+    }
+  });
+
+  function showQuestion(qNumber) {
+    document.querySelector(".question-display p").innerText = `Question ${qNumber} of ${questions.length}`;
+    document.querySelector(".question-display h1").innerText = questions[qNumber - 1].question;
+
+    document.querySelectorAll(".answer-options-container > .answer-option").forEach(element => element.remove())
+    for (let i = 0; i < questions[qNumber - 1].options.length; i++) {
+      let node = document.querySelector(".answer-display template").content.cloneNode(true);
+      node.querySelector(".answer-option-name span").innerText = alphabet.charAt(i);
+      node.querySelector(".answer-option-content").innerText = questions[qNumber - 1].options[i];
+      document.querySelector(".answer-options-container").appendChild(node);
+    }
+
+    setupListeners();
+    renderMathInElement(document.body);
+  }
+
+  function showFinishScreen(correctCount, questionCount) {
+    document.querySelector(".card-display").style.display = "none";
+    document.querySelector(".final-screen").style.display = "flex";
+    document.querySelector(".final-display-score .score").innerText = correctCount;
+    document.querySelector(".final-display-score .total").innerText = ` out of ${questionCount}`;
+  }
+
+  function setupListeners() {
+    document.querySelectorAll(".answer-option").forEach(element => {
+      element.addEventListener("click", () => {
+        if (element.classList.contains("active")) {
+          element.classList.remove("active");
+        } else {
+          select([...document.querySelectorAll(".answer-option")].indexOf(element));
+        }
+      });
+    });
+  }
+
+  function select(index) {
+    let elements = document.querySelectorAll(".answer-option");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.remove("active");
+    }
+    elements[index].classList.add("active");
+  }
+</script>
+</html>
