@@ -32,6 +32,8 @@ Useful references:
 
 - [Date](https://www.w3schools.com/js/js_dates.asp), [Event listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp),
   [Timing](https://www.w3schools.com/js/js_timing.asp)
+- View
+  the [reference solution webpage](https://chjus.github.io/Introduction-to-HTML-CSS-and-JS/solutions/age-calculator.html)
 
 ### Dealing with Dates
 

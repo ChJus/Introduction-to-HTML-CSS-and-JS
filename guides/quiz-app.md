@@ -16,6 +16,8 @@ You may want to explore:
 - [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) (JavaScript Object Notation) — storing
   questions and solutions in a more standardized object format.
 
+You can see a working example [here](https://chjus.github.io/Introduction-to-HTML-CSS-and-JS/solutions/quiz-app.html).
+
 ### Hard challenge
 
 - Create a global leaderboard for your quiz based on user time and accuracy. You will need to explore

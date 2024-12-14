@@ -13,7 +13,9 @@ Some basic details:
 - Image and icon is included in **assets** folder.
 - Body text (`font-size: 10pt; line-height: 1.6; color: rgb(90, 90, 90);`)
 
-If you are stuck, you may want to take a look at the reference solution in the **solutions** folder.
+If you are stuck, you may want to take a look at the reference solution in the **solutions** folder,
+or check
+the [live webpage example](https://chjus.github.io/Introduction-to-HTML-CSS-and-JS/solutions/card-component-solution.html).
 
 ### Some helpful information
 
