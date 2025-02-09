@@ -24,3 +24,7 @@ You can see a working example [here](https://chjus.github.io/Introduction-to-HTM
   **backend server-side development** and **database** technology.
 - Allow users to log in to your site and create their own shareable quizzes with customizable options.
 - Reference: [server-side programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+- I suggest starting with using Firebase, which is a cloud database (meaning you do
+  not need to self-host a server with backend logic, instead you can provide handling and security
+  checks using Firebase's configurable read/create/update rules). A real-world example with simple usage of Firebase is
+  this [side project](https://github.com/ChJus/Surveys). 
